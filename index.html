@@ -226,7 +226,8 @@
                         </p>
                     </div>
                     <div class="form-wrapper">
-                        <form class="contact-form" id="contact-form" action="contactform.php" method="POST">
+                        <iframe name="dummyframe" id="dummyframe" style="display:none;"></iframe> <!--invisible iframe to avoid formspree redirect-->
+                        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xbjqwkrg" target="dummyframe" method="POST">
                             <!-- <div class="form-row">                        
                                 <input type="text" name="name" class="contact-input" id="email" required>
                                 <label for="name" class="input-label">Name</label>
@@ -240,7 +241,7 @@
                             </div>
                             <div class="form-row">  
                                 <div class="input-data">
-                                    <input type="text" name="mail" required>
+                                    <input type="email" name="_replyto" required>
                                     <div class="underline"></div>
                                     <label>Email Address</label>
                                 </div>                        
