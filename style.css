@@ -456,14 +456,15 @@ section .title{
     transform: translateX(-20px) translateY(-20px);
 }
 .about .about-content .left{
-    width: 55%;
+    width: 65%;
 
     display: inline-block;
     vertical-align: top;
 }
 .about .about-content .left .text{
-    font-size: clamp(10px, 3vw, 17px);
+    font-size: clamp(10px, 3vw, 15px);
     margin-bottom: 10px;
+    line-height: 1.6;
 }
 .about .left .buttons{
     margin-top: 35px;    
@@ -692,6 +693,7 @@ section .title{
 }
 .projects .right .project-description{
     margin-top: 10px;
+    line-height: 1.6;
 }
 
 
