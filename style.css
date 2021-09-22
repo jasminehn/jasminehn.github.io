@@ -42,9 +42,7 @@
 body{
     min-height: 100vh;
     /* background: linear-gradient(#084bf4,#06f5cd); */
-    background: linear-gradient(#5cd0ff,#e5a8e3);
-
-    
+    background: linear-gradient(#5cd0ff,#e5a8e3);    
 }
 
 
@@ -702,7 +700,7 @@ section .title{
 .contact{
     /* background: url('https://source.unsplash.com/1920x1080/?japan') no-repeat center; */
     /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://source.unsplash.com/1600x900/?dark')  no-repeat center; */
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://source.unsplash.com/1800x900/?night')  no-repeat center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://source.unsplash.com/1800x900/?tokyo')  no-repeat center;
     background-size: cover; /*this makes the background not get cut off!!! */
     color: whitesmoke;
 }
