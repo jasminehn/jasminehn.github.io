@@ -323,7 +323,8 @@ section .title{
     display: flex;
     /* background: url('https://source.unsplash.com/1920x1080/?night') no-repeat center; */
     /* background: url('https://source.unsplash.com/1600x900/?night') no-repeat center; */
-    background: url('https://source.unsplash.com/1800x900/?night') no-repeat center; /*the height of the background is 200px taller than default to accomadate for parallax "snapping" when you first scroll*/
+    /*background: url('https://source.unsplash.com/1800x900/?night') no-repeat center;*/
+    background: url('https://source.unsplash.com/user/365yehet/likes/1800x900') no-repeat center; /*the height of the background is 200px taller than default to accomadate for parallax "snapping" when you first scroll*/
     background-size: cover; /*this makes the background not get cut off!!! */
     color: white;
     height: 100vh;
@@ -472,9 +473,9 @@ section .title{
 
 /*------------- EXPERIENCE SECTION CONTENT -------------*/
 .exp{
-    /* background: url('https://source.unsplash.com/1920x1080/?programming') no-repeat center; */
-    background: url('https://source.unsplash.com/1600x900/?programming') no-repeat center;
-    /* background: url('https://source.unsplash.com/1800x900/?programming') no-repeat center; */
+    /*background: url('https://source.unsplash.com/1600x900/?programming') no-repeat center;*/
+    /*background: url('https://source.unsplash.com/user/365yehet/likes/1600x1900') no-repeat center;*/
+    background: url('https://source.unsplash.com/collection/2710241/1600x1900') no-repeat center;
     background-size: cover; /*this makes the background not get cut off!!! */
     color: whitesmoke;
 }
@@ -704,7 +705,8 @@ section .title{
 .contact{
     /* background: url('https://source.unsplash.com/1920x1080/?japan') no-repeat center; */
     /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://source.unsplash.com/1600x900/?dark')  no-repeat center; */
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://source.unsplash.com/1800x900/?tokyo')  no-repeat center;
+    /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://source.unsplash.com/1800x900/?tokyo')  no-repeat center;*/
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://source.unsplash.com/collection/9049879/1800x900/')  no-repeat center;
     background-size: cover; /*this makes the background not get cut off!!! */
     color: whitesmoke;
 }
