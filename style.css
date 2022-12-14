@@ -586,13 +586,11 @@ section .title{
     margin-bottom: 100px;
     transition: 0.3s ease;
 }
-.projects .item:nth-child(even){
-    flex-direction: row-reverse;
-}
-.projects .item .left{
+
+.projects .item .project-image-wrapper{
     flex: 1;
 }
-.projects .item .right{
+.projects .item .project-info-wrapper{
     flex: 1;
     margin-left: -200px;
     text-align: right;
@@ -615,30 +613,36 @@ section .title{
     /* box-shadow: 0 0 20px #00000028; */
     /* box-shadow: 0 0 20px #000000; */
 }
-.projects .item:nth-child(even) .right{
-    margin-left: 0;
-    text-align: left;
-    
+
+.projects .item:nth-child(even){
+    /*flex-direction: row-reverse;*/
 }
-.projects .item:nth-child(even) .right .buttons{
+.projects .item:nth-child(even) .project-info-wrapper{
+    /*margin-left: -200;*/
+    /*text-align: left;*/
+    font-size: 12px;
+}
+/*
+.projects .item:nth-child(even) .project-info-wrapper .buttons{
     justify-content: flex-start;
 }
-.projects .item:nth-child(even) .right .buttons .solid-btn{
+.projects .item:nth-child(even) .project-info-wrapper .buttons .solid-btn{
     margin: 5px 20px 0 0;
 }
-.projects .item:nth-child(even) .right .buttons .outline-btn{
+.projects .item:nth-child(even) .project-info-wrapper .buttons .outline-btn{
     margin-top: 5px;
     margin-left: 0;
 }
-.projects .item:nth-child(even) .left{
-    margin-left: -200px;
+*/
+.projects .item:nth-child(even) .project-image-wrapper{
+    /*margin-left: -200px;*/
 }
-.projects .item .left .img{
+.projects .item .project-image-wrapper .img{
     overflow: hidden;
     /* border-radius: 5px; */
     /* box-shadow: 0 0 20px #44117420; */
 }
-.projects .item .left .img img{
+.projects .item .project-image-wrapper .img img{
     /* width: 500px; */
     height: 400px;
     object-fit: cover;
@@ -647,10 +651,10 @@ section .title{
 .projects .item:hover{
     transform: scale(1.02);
 }
-.projects .right .technologies{
+.projects .project-info-wrapper .technologies{
     margin: 15px 0;
 }
-.projects .right .technologies .tech-item{
+.projects .project-info-wrapper .technologies .tech-item{
     display: inline-block;
     padding: 7px 7px 5px;
     margin-right: 3px;
@@ -664,7 +668,7 @@ section .title{
     font-weight: 500;
     letter-spacing: .5px;
 }
-.projects .right .buttons{
+.projects .project-info-wrapper .buttons{
     /* margin-top: 35px; */
     /* display: flex;
     flex-direction: column; */
@@ -677,19 +681,19 @@ section .title{
     align-items: center;
     justify-content: flex-end;
 }
-.projects .right .buttons .solid-btn{
+.projects .project-info-wrapper .buttons .solid-btn{
     /* margin-right: 10px; */
     margin-top: 5px; 
     /* margin: 5px 20px 0 0; */
     /* padding-bottom: 10px; */
 }
-.projects .right .buttons .outline-btn{
+.projects .project-info-wrapper .buttons .outline-btn{
     /* margin-right: 20px;*/
     /* margin-top: 5px;  */
     margin: 5px 0 0 20px;
     /* padding-bottom: 10px; */
 }
-.projects .right .project-description{
+.projects .project-info-wrapper .project-description{
     margin-top: 10px;
     line-height: 1.6;
 }
