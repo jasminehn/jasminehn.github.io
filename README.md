@@ -16,8 +16,8 @@ Hi! Thank you for checking out the repo for my portfolio website. This website i
 ## 🎨 Color Reference
 | Color          | Hex                                                                | Use
 | -------------- | ------------------------------------------------------------------ | ------------------- |
-| Whitesmoke     | ![this is an image](https://via.placeholder.com/10x10/f5f5f5/) `#f5f5f5` | Text                |
-| Xiketic        | ![#080816](https://via.placeholder.com/10/080816?text=+) `#080816` | Background          |
-| Blue Crayola   | ![#2770fb](https://via.placeholder.com/10/2770fb?text=+) `#2770fb` | Gradient (Blue)     |
-| French Violet  | ![#6b12d0](https://via.placeholder.com/10/6b12d0?text=+) `#6b12d0` | Gradient (Purple)   |
-| Dark Purple    | ![#171731](https://via.placeholder.com/10/171731?text=+) `#171731` | Projects Background |
+| Whitesmoke     | ![#f5f5f5](https://placehold.co/5/f5f5f5/f5f5f5) `#f5f5f5` | Text                |
+| Xiketic        | ![#080816](https://placehold.co/5/080816/080816) `#080816` | Background          |
+| Blue Crayola   | ![#2770fb](https://placehold.co/5/2770fb/2770fb) `#2770fb` | Gradient (Blue)     |
+| French Violet  | ![#6b12d0](https://placehold.co/5/6b12d0/6b12d0) `#6b12d0` | Gradient (Purple)   |
+| Dark Purple    | ![#171731](https://placehold.co/5/171731/171731) `#171731` | Projects Background |
