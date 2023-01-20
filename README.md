@@ -7,7 +7,7 @@ Hi! Thank you for checking out the repo for my portfolio website. This website i
 ## ⚙️ Tech stack
 - [Visual Studio Code](https://code.visualstudio.com/) for efficient code editing
 - [Github Pages](https://pages.github.com/) for easy push-to-deploy hosting
-- [Unsplash](https://unsplash.com/) for stock photos
+- [Unsplash](https://unsplash.com/) for pretty photos
 - [FontAwesome](https://fontawesome.com/) for cool icons
 - [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll) for animated scrolling to anchor links
 - [Typed.js](https://mattboldt.com/demos/typed-js/) for the typing text animation
@@ -16,7 +16,7 @@ Hi! Thank you for checking out the repo for my portfolio website. This website i
 ## 🎨 Color Reference
 | Color          | Hex                                                                | Use
 | -------------- | ------------------------------------------------------------------ | ------------------- |
-| Whitesmoke     | ![#f5f5f5](https://via.placeholder.com/10/f5f5f5?text=+) `#f5f5f5` | Text                |
+| Whitesmoke     | ![this is an image](https://via.placeholder.com/10x10/f5f5f5/) `#f5f5f5` | Text                |
 | Xiketic        | ![#080816](https://via.placeholder.com/10/080816?text=+) `#080816` | Background          |
 | Blue Crayola   | ![#2770fb](https://via.placeholder.com/10/2770fb?text=+) `#2770fb` | Gradient (Blue)     |
 | French Violet  | ![#6b12d0](https://via.placeholder.com/10/6b12d0?text=+) `#6b12d0` | Gradient (Purple)   |
