@@ -132,7 +132,7 @@ body{
     justify-content: center;
     align-items: center; */
     list-style: none;
-  text-align: center;
+    text-align: center;
 }
 .navbar ul li{
     /* list-style: none;
