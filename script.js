@@ -72,7 +72,7 @@ function parallax2() {
     // var wScroll = $(window).scrollTop() - $('.exp').offset().top ;
 
     console.log("wScroll2 = "+wScroll);
-    $('.parallax-effect2').css('background-position', 'center ' +(wScroll*0.2)+'px')
+    $('.parallax-effect2').css('background-position', 'center ' +(wScroll*0.1)+'px')
     // $('.parallax-effect2').css('background-position', 'center ' +(wScroll*0.75)+'px')
 }
 function parallax3() {

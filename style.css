@@ -41,8 +41,8 @@
 
 body{
     min-height: 100vh;
-    /* background: linear-gradient(#084bf4,#06f5cd); */
-    background: linear-gradient(#5cd0ff,#e5a8e3);    
+    /* background: linear-gradient(#5cd0ff,#e5a8e3); */
+    background: #080816;
 }
 
 
@@ -321,9 +321,6 @@ section .title{
 /*------------- INTRO CONTENT -------------*/
 .home{
     display: flex;
-    /* background: url('https://source.unsplash.com/1920x1080/?night') no-repeat center; */
-    /* background: url('https://source.unsplash.com/1600x900/?night') no-repeat center; */
-    /*background: url('https://source.unsplash.com/1800x900/?night') no-repeat center;*/
     background: url('https://source.unsplash.com/user/365yehet/likes/1800x900') no-repeat center; /*the height of the background is 200px taller than default to accomadate for parallax "snapping" when you first scroll*/
     background-size: cover; /*this makes the background not get cut off!!! */
     color: white;
@@ -473,8 +470,6 @@ section .title{
 
 /*------------- EXPERIENCE SECTION CONTENT -------------*/
 .exp{
-    /*background: url('https://source.unsplash.com/1600x900/?programming') no-repeat center;*/
-    /*background: url('https://source.unsplash.com/user/365yehet/likes/1600x1900') no-repeat center;*/
     background: url('https://source.unsplash.com/collection/2710241/1600x1900') no-repeat center;
     background-size: cover; /*this makes the background not get cut off!!! */
     color: whitesmoke;
@@ -563,20 +558,8 @@ section .title{
 
 /*------------- PROJECTS SECTION STYLE -------------*/
 .projects{
-    /* background: #605e66; */
     color: whitesmoke;
-    /* background: #191328; */
-    /* background: linear-gradient(135deg, #14141b, #1b1429); */
-    /* background: linear-gradient(270deg,rgb(27, 20, 41),rgb(20, 15, 35)); */
-    /* background: linear-gradient(#000012, #130026); */
-    /* background: radial-gradient(#130026, #000012); */
-    /* background: radial-gradient(#0b001e, #000012, #0b001e); */
-    /* background: #0a0c0f; */
     background: #080816;
-    /* background: #131125; */
-    /* background: #1b202a; */
-    /* backdrop-filter: blur(20px); */
-    /* background: #111325; */
 }
 .projects .item{
     display: flex;
@@ -596,23 +579,12 @@ section .title{
     margin-left: -200px;
     text-align: right;
     
-    /* background-color: #020008; */
-    /* background-color: rgb(17, 9, 24); */
-    /* background-color: #291a41; */
-    /* background-color: #191027; */
-    /* background-color: #1c1a34; */
-    /* background-color: #0f0f20; */
     background-color: #171731;
-    /* background: linear-gradient(45deg, #2770fb, #6b12d0); */
     font-size: 14px;
-    /* backdrop-filter: blur(82px); */
     
-    /* color: white; */
     padding: 30px 20px;
     
     border-radius: 12px;
-    /* box-shadow: 0 0 20px #00000028; */
-    /* box-shadow: 0 0 20px #000000; */
 }
 
 .projects .item:nth-child(even){
@@ -703,12 +675,21 @@ section .title{
 
 /*------------- CONTACT SECTION CONTENT -------------*/
 .contact{
-    /* background: url('https://source.unsplash.com/1920x1080/?japan') no-repeat center; */
-    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://source.unsplash.com/1600x900/?dark')  no-repeat center; */
-    /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://source.unsplash.com/1800x900/?tokyo')  no-repeat center;*/
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://source.unsplash.com/collection/9049879/1800x900/')  no-repeat center;
+    /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://source.unsplash.com/collection/9049879/1800x900/')  no-repeat center;*/
+    background: url('https://source.unsplash.com/collection/9049879/1800x900/') no-repeat center;
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));*/ /*dont use ths*/
     background-size: cover; /*this makes the background not get cut off!!! */
     color: whitesmoke;
+}
+.contact::after{
+    content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+        z-index: -1;
 }
 .contact .contact-content{
     display: flex;
