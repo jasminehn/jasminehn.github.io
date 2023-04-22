@@ -2,7 +2,7 @@
 
 <img width="951" alt="portfolio-site-screenshot-2" src="https://user-images.githubusercontent.com/88569965/133912466-a5288bae-c3e4-4f41-96b6-7004d7785cac.png">
 
-Hi! Thank you for checking out the repo for my website. This website is not just my portfolio, but also a personal project in and of itself. It feautes a little about me, a link to my full resume, my professional experience, some projects I've worked on, a contact form, and links to my social media. :octocat:
+Hi! Thank you for checking out the repo for my website. This website is not just my portfolio, but also a personal project in and of itself. It features a little about me, a link to my full resume, my professional experience, some projects I've worked on, a contact form, and links to my social media. :octocat:
 
 ## ⚙️ Tech stack
 - [Visual Studio Code](https://code.visualstudio.com/) for efficient code editing
