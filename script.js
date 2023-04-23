@@ -60,30 +60,18 @@ $(window).scroll(function(){
     parallax3();
 });
 function parallax() {
-    var wScroll = $(window).scrollTop(); //the "- 200" makes it not snap down when first scrolling
-    // console.log("wScroll = "+wScroll);
+    var wScroll = $(window).scrollTop();
     $('.parallax-effect').css('background-position', 'center '+(wScroll*0.25)+'px')
-    // console.log("(wScroll*0.5) = "+wScroll*0.5);
 }
 function parallax2() {
-    // var wScroll = $(window).scrollTop() - 2000;
     var wScroll = $(window).scrollTop() - $('.exp').offset().top;
-    // var wScroll = ( $(window).scrollTop() - 200 ) - $('.exp').offset().top; //cannot tell which is better, this or the line below
-    // var wScroll = $(window).scrollTop() - $('.exp').offset().top ;
 
-    console.log("wScroll2 = "+wScroll);
+    //console.log("wScroll2 = "+wScroll);
     $('.parallax-effect2').css('background-position', 'center ' +(wScroll*0.1)+'px')
-    // $('.parallax-effect2').css('background-position', 'center ' +(wScroll*0.75)+'px')
 }
 function parallax3() {
-    // var wScroll = $(window).scrollTop() - 4000;
     var wScroll = $(window).scrollTop() - $('.contact').offset().top;
-    // var wScroll = ( $(window).scrollTop() - 200 ) - $('.contact').offset().top; //cannot tell which is better, this or the line below
-    // var wScroll = $(window).scrollTop() - $('.contact').offset().top; 
-
-    // console.log("wScroll = "+wScroll);
     $('.parallax-effect3').css('background-position', 'center ' +(wScroll*0.2)+'px')
-    // $('.parallax-effect2').css('background-position', 'center ' +(wScroll*0.75)+'px')
 }
 
 
@@ -94,18 +82,18 @@ const navLi = document.querySelectorAll('nav ul li a');
 window.addEventListener("scroll", () => {
     let current = "";
     sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (pageYOffset >= sectionTop - sectionHeight / 3) {
-        current = section.getAttribute("id"); 
-      }
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute("id"); 
+        }
     });
-  
+
     navLi.forEach((a) => {
-      a.classList.remove("active");
-      if (a.classList.contains(current)) { //the id of the sections and the class of the nav links MUST BE THE SAME for this to work
-        a.classList.add("active");
-      }
+        a.classList.remove("active");
+        if (a.classList.contains(current)) { //the id of the sections and the class of the nav links MUST BE THE SAME for this to work
+            a.classList.add("active");
+        }
     });
 });
 
@@ -116,6 +104,23 @@ var typed = new Typed(".typing-text", {
     typeSpeed: 80,
     backSpeed: 40,
     loop: true
+});
+
+
+//-------------------- CONTACT FORM --------------------
+const form = document.getElementById('contact-form')
+
+form.addEventListener("submit", function(event) {
+    // get the email address from the form input
+    const email = form.elements._replyto.value;
+
+    // store the email in sessionStorage
+    sessionStorage.setItem('email', email);
+
+    // hide the form and show the thank you message
+    document.querySelector('.c-container').style.display = 'none';
+    document.querySelector('.thankyou-container').style.display = 'block';
+    document.querySelector('.thankyou-container span').textContent = `${email}`;
 });
 
 

@@ -1,18 +1,6 @@
 <?php
 
-//if (isset($_POST['submit'])) {
-    // $name = $_POST['name'];
-    // $subject = $_POST['subject'];
-    // $mailFrom = $_POST['mail'];
-    // $message = $_POST['message'];
-
-    // $mailTo = "jhnelson.contact@gmail.com";
-    // $headers = "From: ".$mailFrom;
-    // $txt = "You have received an email from ".$name.".\n\n".$message;
-
-    // mail($mailTo, $subject, $txt, $headers);
-    // header("Location:index.html");
-//}
+//github pages doesn't support server-side languages, so this file is not in use :(
 
     $name = $_POST['name'];
     $email = $_POST['email'];
