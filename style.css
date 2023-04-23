@@ -584,7 +584,7 @@ section .title{
     text-align: right;
     
     background-color: #171731;
-    font-size: 14px;
+    font-size: 12px;
     
     padding: 30px 20px;
     
@@ -597,7 +597,7 @@ section .title{
 .projects .item:nth-child(even) .project-info-wrapper{
     /*margin-left: -200;*/
     /*text-align: left;*/
-    font-size: 12px;
+    /* font-size: 12px; */
 }
 /*
 .projects .item:nth-child(even) .project-info-wrapper .buttons{
