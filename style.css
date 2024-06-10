@@ -281,9 +281,9 @@ body{
     -webkit-mask: 
        linear-gradient(white, white) padding-box, 
        linear-gradient(white, white);
-    -webkit-mask-composite: destination-out; 
-    mask-composite: exclude; 
-  }
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
 
 
 /*------------- SECTION STUFF -------------*/
@@ -321,7 +321,8 @@ section .title{
 /*------------- INTRO CONTENT -------------*/
 .home{
     display: flex;
-    background: url('https://source.unsplash.com/user/365yehet/likes/1800x900') no-repeat center; /*the height of the background is 200px taller than default to accomadate for parallax "snapping" when you first scroll*/
+    /*background: url('https://source.unsplash.com/user/365yehet/likes/1800x900') no-repeat center; /*the height of the background is 200px taller than default to accomadate for parallax "snapping" when you first scroll*/
+    background: url('images/headers/header-section-image.jpg') no-repeat center; /*temp bc unsplash links are broken :(*/
     background-size: cover; /*this makes the background not get cut off!!! */
     color: white;
     height: 100vh;
@@ -470,7 +471,8 @@ section .title{
 
 /*------------- EXPERIENCE SECTION CONTENT -------------*/
 .exp{
-    background: url('https://source.unsplash.com/collection/2710241/1600x1900') no-repeat center;
+    /* background: url('https://source.unsplash.com/collection/2710241/1600x1900') no-repeat center; */
+    background: url('images/headers/exp-section-image-v2.jpg') no-repeat center; /*temp bc unsplash links are broken :(*/
     background-size: cover; /*this makes the background not get cut off!!! */
     color: whitesmoke;
 }
@@ -680,7 +682,8 @@ section .title{
 /*------------- CONTACT SECTION CONTENT -------------*/
 .contact{
     /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://source.unsplash.com/collection/9049879/1800x900/')  no-repeat center;*/
-    background: url('https://source.unsplash.com/collection/9049879/1800x900/') no-repeat center;
+    /* background: url('https://source.unsplash.com/collection/9049879/1800x900/') no-repeat center; */
+    background: url('images/headers/contact-section-image.jpg') no-repeat center; /*temp bc unsplash links are broken :(*/
     background-size: cover; /*this makes the background not get cut off!!! */
     color: whitesmoke;
 }
