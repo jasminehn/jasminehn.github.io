@@ -98,6 +98,18 @@ window.addEventListener("scroll", () => {
 });
 
 
+//-------------------- FLIP EXP CARDS --------------------
+const expCards = document.querySelectorAll('.card');
+
+expCards.forEach((card) => {
+    card.addEventListener('click', () => {
+        console.log("yippee: ");
+        card.classList.toggle('flipped');
+    });
+});
+
+
+
 //-------------------- TYPING TEXT THING --------------------
 var typed = new Typed(".typing-text", {
     strings: ["Software Engineer", "Full-Stack Developer", "UI/UX Designer", "Freelancer"],

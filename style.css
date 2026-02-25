@@ -483,51 +483,53 @@ section .title{
     justify-content: center;
 }
 .exp .exp-content .card{
-    /* width: calc(25% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    transition: all 0.3s ease;
-    margin-bottom: 20px; */
-
-    position: relative;
-    /* width: 250px;
-    height: 400px; */
     width: 350px;
     height: 250px;
     margin: 13px;
-    /* box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5); */
-    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); */
+    perspective: 1000px;
+    cursor: pointer;
+}
+.exp .exp-content .card:hover .card-front{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transform: translateY(-8px);
+    background: linear-gradient(45deg, #2770fb, #6b12d0, transparent);
+}
+.exp .exp-content .card .box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.card.flipped .box{ 
+    transform: rotateY(180deg);
+}
+.exp .exp-content .card .card-front{
+    transition:  0.5s;
+}
+.exp .exp-content .card .card-back{
+    transform: rotateY(180deg) translateY(-8px);
+    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    /* transform: translateY(-8px); */
+    background: linear-gradient(45deg, #2770fb, #6b12d0, transparent);
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
-    /* background: rgba(42, 8, 73, 0.384); */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     border-top: 2px solid rgba(255, 255, 255, 0.3);
     border-left: 3px solid rgba(255, 255, 255, 0.3);
-    /* border-top: 1px solid rgba(42, 8, 73, 0.5);
-    border-left: 1px solid rgba(42, 8, 73, 0.5); */
     backdrop-filter: blur(15px);
-    transition:  0.5s;
-}
-.exp .exp-content .card:hover{
-    /* box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2); */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transform: translateY(-8px);
-    /* background: linear-gradient(45deg, #b95ce4, #4f29cd, transparent); */
-    background: linear-gradient(45deg, #2770fb, #6b12d0, transparent);
-    /* background: linear-gradient(45deg, #2771fc, #6a13d1, transparent); */
-}
-.exp .exp-content .card .box{
-    /* transition: all 0.3s ease; */
-    padding: 20px;
-    /* transition: 0.5s; */
-}
-.exp .exp-content .card:hover .box{ /*the text inside the card*/
-    /* transform: scale(1.05); */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .exp .exp-content .card .job-title{
     font-size: 25px;
@@ -548,16 +550,11 @@ section .title{
     padding-bottom: 12px;
 }
 .exp .exp-content .card .job-description{
-    font-size: 13px;
-    /* font-size: clamp(9px, 3vw, 13px); */
-    margin-left: 15px;
+    font-size: 10px;
+    padding: 0px 25px;
 }
 .exp .exp-content .card .job-description li{
     padding: 5px 0px;
-}
-.exp .exp-content .card .job-description{
-    /* THIS IS HIDING THE EXP DESCRIPTIONS!!!!!!! DONT FORGET!!!! */
-    display: none;
 }
 
 
