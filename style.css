@@ -15,6 +15,13 @@
     height: 500px;
 } */
 
+:root {
+    --main-bg: #080816;
+    --gradient-left: #2770fb;
+    --gradient-right: #6b12d0;
+    --gradient-tilt: 45deg;
+}
+
 .parallax-effect,
 .parallax-effect2,
 .parallax-effect3{
@@ -42,7 +49,7 @@
 body{
     min-height: 100vh;
     /* background: linear-gradient(#5cd0ff,#e5a8e3); */
-    background: #080816;
+    background: var(--main-bg);
 }
 
 
@@ -51,7 +58,7 @@ body{
     width: 8px;       
 }
 ::-webkit-scrollbar-track{
-    background-color: #080816;
+    background-color: var(--main-bg);
     
 }
 ::-webkit-scrollbar-thumb{
@@ -122,7 +129,7 @@ body{
 .navbar .logo:hover{
     transform: scale(1.2);
     
-    background: linear-gradient(45deg, #2770fb, #6b12d0);  
+    background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right));  
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;    
 }
@@ -152,7 +159,7 @@ body{
     content: "";
     position: absolute;
     /* background-color: #55abe1; */
-    background: linear-gradient(45deg, #2770fb, #6b12d0);
+    background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right));
     height: 2px;
     width: 0%;
     left: 0;
@@ -237,7 +244,7 @@ body{
 
 /*------------- BUTTON STYLING -------------*/
 .solid-btn{
-    background: linear-gradient(45deg, #2770fb, #6b12d0);
+    background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right));
     color: white;
     font-size: 14px;
     /* font-size: clamp(3px, 2vw, 14px); */
@@ -275,7 +282,7 @@ body{
     /* border-radius:50px; 
     padding:10px;  */
 
-    background: linear-gradient(45deg, #2770fb, #6b12d0) border-box;
+    background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right)) border-box;
     border: inherit;
     border-radius: inherit;
     -webkit-mask: 
@@ -313,7 +320,7 @@ section .title{
     width: 100px;
     height: 2px;
     /* background-color: turquoise; */
-    background: linear-gradient(45deg, #2770fb, #6b12d0);
+    background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right));
 }
 
 
@@ -352,7 +359,7 @@ section .title{
     /* background: linear-gradient(270deg,rgb(27, 20, 41),rgb(20, 15, 35)); */
     /* background: radial-gradient(#0b001e, #000012, #0b001e); */
     /* background: #0a0c0f; */
-    background: #080816;
+    background: var(--main-bg);
     color: whitesmoke;
     /* backdrop-filter: blur(20px); */
 }
@@ -409,7 +416,7 @@ section .title{
 
 
     
-    background: linear-gradient(45deg, #2770fb, #6b12d0) border-box;
+    background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right)) border-box;
     border: inherit;
     border-radius: inherit;
     -webkit-mask: 
@@ -435,7 +442,7 @@ section .title{
 
     transition: 0.5s;
 
-    background: linear-gradient(45deg, #6b12d0, #2770fb) border-box;
+    background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right)) border-box;
     border: inherit;
     border-radius: inherit;
     -webkit-mask: 
@@ -492,7 +499,7 @@ section .title{
 .exp .exp-content .card:hover .card-front{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     transform: translateY(-8px);
-    background: linear-gradient(45deg, #2770fb, #6b12d0, transparent);
+    background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right), transparent);
 }
 .exp .exp-content .card .box{
     position: relative;
@@ -512,7 +519,7 @@ section .title{
     
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     /* transform: translateY(-8px); */
-    background: linear-gradient(45deg, #2770fb, #6b12d0, transparent);
+    background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right), transparent);
 }
 .card-front, .card-back {
     position: absolute;
@@ -562,7 +569,7 @@ section .title{
 /*------------- PROJECTS SECTION STYLE -------------*/
 .projects{
     color: whitesmoke;
-    background: #080816;
+    background: var(--main-bg);
 }
 .projects .item{
     display: flex;
@@ -772,7 +779,7 @@ section .title{
     transform: translateY(-25px);
     font-size: 14px;
     /* color: whitesmoke; */
-    background: linear-gradient(45deg, #2770fb, #6b12d0);  
+    background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right));  
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 
@@ -808,7 +815,7 @@ section .title{
     content: "";
     height: 100%;
     width: 100%;
-    background: linear-gradient(45deg, #2770fb, #6b12d0);
+    background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right));
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease;
@@ -911,7 +918,7 @@ section .title{
 .footer .social-links .social-link:hover{
     transform: scale(1.2) translateY(-5px);
     
-    background: linear-gradient(45deg, #2770fb, #6b12d0);  
+    background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right));  
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     
