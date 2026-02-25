@@ -28,9 +28,6 @@
     transition: initial;
 }
 
-
-
-
 *,
 *:before,
 *:after{
@@ -40,16 +37,15 @@
     text-decoration: none;
 }
 
-/* html{
-    scroll-behavior: smooth;
-} */
-
-
-
 body{
     min-height: 100vh;
-    /* background: linear-gradient(#5cd0ff,#e5a8e3); */
     background: var(--main-bg);
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
 }
 
 
@@ -76,14 +72,6 @@ body{
 }
 
 
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-
-
-
 /*------------- NAVIGATION BAR -------------*/
 .navbar{
     position: fixed;
@@ -97,28 +85,15 @@ body{
     z-index: 1000;
     font-family: 'Montserrat', sans-serif;
     transition: all 0.3s ease;
-    
-    /* background: #000012; */
 }
 .navbar.appear{
     padding: 15px;
-    
-    /* background: #09001d; */
-    /* background-color: rgba(18, 10, 47, 0.85); */
     background: rgba(146, 146, 146, 0.05);
     backdrop-filter: blur(10px);
     box-shadow: 0 10px 30px -10px rgba(2,2,2,0.7);
 }
-/* .navbar .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
 .navbar .logo{
-    font-weight: 700;    
-
-    /* font-family: 'Rampart One', cursive; */
-    
+    font-weight: 700;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
@@ -135,15 +110,10 @@ body{
 }
 
 .navbar ul{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     list-style: none;
     text-align: center;
 }
 .navbar ul li{
-    /* list-style: none;
-    margin-left: 20px; */
     display: inline-block;
 }
 .navbar ul li a{
@@ -153,12 +123,10 @@ body{
     display: block;
     margin: 0 10px;
     position: relative; /* THIS is what makes the highlight thing go from full width to text width!!! */
-    /* border-radius: 20px; */
 }
 .navbar ul li a:after{
     content: "";
     position: absolute;
-    /* background-color: #55abe1; */
     background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right));
     height: 2px;
     width: 0%;
@@ -166,13 +134,11 @@ body{
     right: 0;
     bottom: 0;
     margin: auto;
-    /* bottom: -10px; */
     transition: 0.3s ease;
 }
 .navbar ul li a:hover,
 .navbar ul li a.active{
     color: white;
-    /* transition: 0.3s ease; */
 }
 .navbar ul li a:hover:after,
 .navbar ul li a.active:after{
@@ -210,35 +176,35 @@ body{
     background-color: white;
     margin: 5px;
     transition:transform 300ms linear 0ms,top 250ms ease-in-out 350ms; 
-  }
+    }
 
-  .menu-btn span:nth-child(1) {
+.menu-btn span:nth-child(1) {
     top: 0;
-  }
-  .menu-btn span:nth-child(2) {
+}
+.menu-btn span:nth-child(2) {
     top: 0;
-  }
-  .menu-btn span:nth-child(3) {
+}
+.menu-btn span:nth-child(3) {
     top: 0;
-  }
+}
 
-  .menu-btn.active span:nth-child(1) {
+.menu-btn.active span:nth-child(1) {
     top: 8px;
     transform: rotate(315deg);
     /* transform: rotate(-45deg); */
     transition: top 250ms  0ms, transform 350ms ease-in-out 350ms;
-  }
-  .menu-btn.active span:nth-child(2) {
+}
+.menu-btn.active span:nth-child(2) {
     transform: rotate(315deg);
     /* transform: rotate(-45deg); */
     transition: top 250ms  0ms, transform 350ms ease-in-out 350ms;
-  }
-  .menu-btn.active span:nth-child(3) {
+}
+.menu-btn.active span:nth-child(3) {
     top: -8px;
     /* transform: rotate(45deg); */
     transform: rotate(225deg); 
     transition: top 250ms  0ms, transform 350ms ease-in-out 350ms;
-  }
+}
 
 
 
@@ -252,23 +218,12 @@ body{
     border-radius: 50px;    
 }
 .outline-btn{
-    /* border-image: linear-gradient(45deg, #2770fb, #6b12d0);
-    border-image-slice: 1;
-    border-style: solid;
-    border-width: 2px;
-    color: white;
-    font-size: 14px;
-    padding: 0.6em 1.6em;
-    border-radius: 50px; */
-
-    /* background: linear-gradient(#171731, #171731) padding-box, linear-gradient(45deg, #2770fb, #6b12d0) border-box;     */
     border: 2px solid transparent;
     position: relative;
     color: white;
     font-size: 14px;
     padding: 0.6em 1.6em;
     border-radius: 50px;   
-
 }
 .outline-btn::before {
     content:"";
@@ -277,17 +232,13 @@ body{
     left:0;
     width: 100%;
     height: 100%;
-    /* right:0;
-    bottom:0; */
-    /* border-radius:50px; 
-    padding:10px;  */
 
     background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right)) border-box;
     border: inherit;
     border-radius: inherit;
     -webkit-mask: 
-       linear-gradient(white, white) padding-box, 
-       linear-gradient(white, white);
+        linear-gradient(white, white) padding-box, 
+        linear-gradient(white, white);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
 }
@@ -295,22 +246,13 @@ body{
 
 /*------------- SECTION STUFF -------------*/
 section{
-    /* position: relative;
-    width: 100%;
-    height: 100vh; */
     padding: 100px 0;
     font-family: 'Montserrat', sans-serif;
-
-    /* position: relative; */
 }
 section .title{
     font-family: 'Montserrat', sans-serif;
-    /* font-size: 40px; */
     font-size: clamp(30px, 10vw, 40px);
     font-weight: 550;
-    /* margin-bottom: 60px; */
-    /* padding-bottom: 20px; */
-    /* margin-top: 100px; */
     position: relative;
     letter-spacing: 1px;
 }
@@ -319,7 +261,6 @@ section .title{
     margin: 30px 0;
     width: 100px;
     height: 2px;
-    /* background-color: turquoise; */
     background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right));
 }
 
@@ -334,18 +275,13 @@ section .title{
     color: white;
     height: 100vh;
     min-height: 500px;
-    /* font-family: 'Ubuntu', sans-serif; */
 }
 .home .home-content .text-1{
-    /* font-size: 95px; */
     font-size: clamp(40px, 8vw, 95px);
-    
-    /* font-size: clamp(25px, 7vw, 95px); */
     text-align: center;
     font-weight: 600;
 }
 .home .home-content .text-2{
-    /* font-size: 50px; */
     font-size: clamp(15px, 5vw, 50px);
     font-weight: 500;
     text-align: center;
@@ -355,24 +291,10 @@ section .title{
 
 /*------------- ABOUT SECTION CONTENT -------------*/
 .about{
-    /* background: #020008; */
-    /* background: linear-gradient(270deg,rgb(27, 20, 41),rgb(20, 15, 35)); */
-    /* background: radial-gradient(#0b001e, #000012, #0b001e); */
-    /* background: #0a0c0f; */
     background: var(--main-bg);
     color: whitesmoke;
-    /* backdrop-filter: blur(20px); */
 }
 .about .about-content{
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between; */
-    
-    /* display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 50px; */
-    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -391,19 +313,13 @@ section .title{
 .about .about-content .right .img-wrapper{
     display: block;
     position: relative; /* this makes it the correct size/position!!! */
-    /* width: 100%; */
-    /* height: 300px;
-    width: 300px; */
     z-index: 1;
     
-
     /*this is for the gradient stuff*/
     border: 2px solid transparent;
     border-radius: 6px;
-    
 }
 .about .about-content .right .img-wrapper:before{ /* this is the square for the picture */
-    /* border: 2px solid whitesmoke; */
     top: -20px;
     left: -20px;
     content: "";
@@ -411,24 +327,20 @@ section .title{
     position: absolute;
     height: 300px;
     width: 300px;
-    /* border-radius: 6px; */
     z-index: -1;
 
-
-    
     background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right)) border-box;
     border: inherit;
     border-radius: inherit;
     -webkit-mask: 
-       linear-gradient(white, white) padding-box, 
-       linear-gradient(white, white);
+        linear-gradient(white, white) padding-box, 
+        linear-gradient(white, white);
     -webkit-mask-composite: destination-out; 
     mask-composite: exclude; 
 
     transition: 0.5s;
 }
 .about .about-content .right .img-wrapper:after{ /* this is the square for the picture */
-    /* border: 2px solid whitesmoke; */
     top: 20px;
     left: 20px;
     content: "";
@@ -436,18 +348,15 @@ section .title{
     position: absolute;
     height: 300px;
     width: 300px;
-    /* border-radius: 6px; */
     z-index: 1;
 
-
     transition: 0.5s;
-
-    background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right)) border-box;
+    background: linear-gradient(var(--gradient-tilt), var(--gradient-right), var(--gradient-left)) border-box;
     border: inherit;
     border-radius: inherit;
     -webkit-mask: 
-       linear-gradient(white, white) padding-box, 
-       linear-gradient(white, white);
+        linear-gradient(white, white) padding-box, 
+        linear-gradient(white, white);
     -webkit-mask-composite: destination-out; 
     mask-composite: exclude; 
 }
@@ -455,13 +364,10 @@ section .title{
     transform: translateX(20px) translateY(20px);
 }
 .about .about-content:hover .img-wrapper:after{
-    /* background: linear-gradient(45deg, #2770fb, #6b12d0) border-box; */
-    
     transform: translateX(-20px) translateY(-20px);
 }
 .about .about-content .left{
     width: 65%;
-
     display: inline-block;
     vertical-align: top;
 }
@@ -516,9 +422,7 @@ section .title{
 }
 .exp .exp-content .card .card-back{
     transform: rotateY(180deg) translateY(-8px);
-    
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    /* transform: translateY(-8px); */
     background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right), transparent);
 }
 .card-front, .card-back {
@@ -537,6 +441,8 @@ section .title{
     backdrop-filter: blur(15px);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+
+    padding: 25px;
 }
 .exp .exp-content .card .job-title{
     font-size: 25px;
@@ -558,7 +464,6 @@ section .title{
 }
 .exp .exp-content .card .job-description{
     font-size: 10px;
-    padding: 0px 25px;
 }
 .exp .exp-content .card .job-description li{
     padding: 5px 0px;
@@ -575,7 +480,6 @@ section .title{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* max-width: 800px; */
     margin: 0 auto;
     margin-bottom: 100px;
     transition: 0.3s ease;
@@ -588,12 +492,9 @@ section .title{
     flex: 1;
     margin-left: -200px;
     text-align: right;
-    
     background-color: #171731;
     font-size: 12px;
-    
     padding: 30px 20px;
-    
     border-radius: 12px;
 }
 
@@ -622,11 +523,8 @@ section .title{
 }
 .projects .item .project-image-wrapper .img{
     overflow: hidden;
-    /* border-radius: 5px; */
-    /* box-shadow: 0 0 20px #44117420; */
 }
 .projects .item .project-image-wrapper .img img{
-    /* width: 500px; */
     height: 400px;
     object-fit: cover;
     border-radius: 5px;
@@ -643,7 +541,6 @@ section .title{
     margin-right: 3px;
     margin-top: 6px;
     color: rgb(146, 146, 146);
-    /* background: rgb(63, 59, 70); */
     background: #464653;
     border-radius: 3px;
     text-transform: uppercase;
@@ -652,29 +549,16 @@ section .title{
     letter-spacing: .5px;
 }
 .projects .project-info-wrapper .buttons{
-    /* margin-top: 35px; */
-    /* display: flex;
-    flex-direction: column; */
-    
-    /* display: flex;
-    flex-wrap: wrap; */
-
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
 }
 .projects .project-info-wrapper .buttons .solid-btn{
-    /* margin-right: 10px; */
-    margin-top: 5px; 
-    /* margin: 5px 20px 0 0; */
-    /* padding-bottom: 10px; */
+    margin-top: 5px;
 }
 .projects .project-info-wrapper .buttons .outline-btn{
-    /* margin-right: 20px;*/
-    /* margin-top: 5px;  */
     margin: 5px 0 0 20px;
-    /* padding-bottom: 10px; */
 }
 .projects .project-info-wrapper .project-description{
     margin-top: 10px;
@@ -705,26 +589,17 @@ section .title{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 40px; */
     padding: 50px 0;
     position: relative;
     width: 100%;
-    /* height: 700px; */
     margin: 13px;
-    
     border-radius: 15px;
-    
-    /* background: rgb(55, 55, 55); */
-    /* background: white; */
-    /* background: #080816; */
     background:rgba(8, 8, 22, 0.5); 
     border-top: 2px solid rgba(132, 132, 248, 0.3);
     border-left: 3px solid rgba(132, 132, 248, 0.3);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     transition:  0.5s;
-
-    /* color: dodgerblue; */
 }
 .contact .contact-content .c-container{
     width: 100%;
@@ -753,9 +628,6 @@ section .title{
 .contact .contact-content .c-container form .form-row .textarea{
     height: 100px;
 }
-/* .contact .contact-content .c-container form .form-row .submit-btn{
-    align-items: center;
-} */
 .input-data input,
 .textarea textarea{
     display: block;
@@ -778,13 +650,10 @@ section .title{
 .textarea textarea:valid ~ label{
     transform: translateY(-25px);
     font-size: 14px;
-    /* color: whitesmoke; */
     background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right));  
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-
     font-weight: 700;
-    /* color: #00b7c7; */
 }
 .textarea textarea{
     resize: none;
@@ -799,7 +668,6 @@ section .title{
     transition: all 0.3s ease;
 }
 .textarea label{
-    /* width: 100%; */
     bottom: 70px;
 }
 .input-data .underline{
@@ -807,7 +675,6 @@ section .title{
     bottom: 0;
     height: 2px;
     width: 100%;
-    /* background: red; */
 }
 .input-data .underline:before,
 .input-data .underline:after{
@@ -830,19 +697,14 @@ section .title{
     border: none;
     width: 118px;
     height: 37px;
-    /* text-transform: uppercase; */
-    /* letter-spacing: 1px; */
     font-weight: 500;
     cursor: pointer;
 }
 .contact .contact-content .c-container .form-wrapper{
-    /* width: 700px; */
     width: 100%;
     max-width: 700px;
     margin-right: auto;
     margin-left: auto;
-    /* margin: 20px auto;
-    padding: 0; */
 }
 .contact .contact-content .thankyou-container{
     text-align: center;
@@ -856,17 +718,9 @@ section .title{
 
 /*------------- FOTTER SECTION STYLE -------------*/
 .footer{
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between; */
-
     background: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    /* height: 200px;
-    min-height: 100px; */
-    
 }
 .footer .footer-content{
     padding-left: 2rem;
@@ -878,7 +732,6 @@ section .title{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    /* font-size: 1rem; */
     max-width: 1280px;
     font-size: 17px;
     
@@ -897,31 +750,20 @@ section .title{
     display: block;
     list-style: none;
     font-size: 0; /* this is to remove the random space between list items */
-
-    /* order: 2; */
-    /* margin: 0 auto;
-    padding: 0;
-    text-align: center; */
 }
 .footer .social-links .social-link{
     display: inline-block;
-    /* font-size: 20px; */
-    /* transition: all 0.3s ease; */
     margin: 0 15px;    
     padding: 0 2px;
     font-size: 20px; /* this is to remove the random space between list items */
-    
     -webkit-transition: all .5s ease;
     transition: all 0.5s ease; 
-    
 }
 .footer .social-links .social-link:hover{
     transform: scale(1.2) translateY(-5px);
-    
     background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right));  
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    
 }
 .footer .social-links .social-link a{
     color: white;    
@@ -930,7 +772,7 @@ section .title{
 
 
 
-/*------------- WIDTH STUFF (MUST BE AT BOTTOM) -------------*/
+/*------------- MEDIA QUERY STUFF -------------*/
 @media (max-width: 600px){
     .exp .exp-content .card{
         height: 200px !important;
@@ -957,31 +799,18 @@ section .title{
         display: block;
         /* z-index: 999; */
     }
-    /* .menu-btn i.active:before{
-        content: "\f00d";
-    } */
     
+    /* NAVBAR SECTION */
     .navbar ul{
         position: fixed;
-        /* align-items: center; */
         height: 100vh;
         width: 320px;
         right: -200%; /* moves menu off the screen while it's not active */
         top: 0;
         text-align: center;
-        
         padding-top: 68px;
         transition: all 0.5s ease;
-        /* background: #201635; */
-        /* background: #161623; */
-        /* background: #1B162C; */
-        /* background: radial-gradient(#291947, #1B162C); */
         background: #11101c;
-        /* background: #100f1d; */
-        
-        /* box-shadow: 0 10px 30px -10px rgba(2,12,27,0.9); */
-        
-        /* box-shadow: -10px 0px 30px -10px rgba(2,2,2,0.9); */
         box-shadow: 0 0 15px rgba(0,0,0,0.9);
     }
     .navbar ul.active{
@@ -997,50 +826,23 @@ section .title{
     .navbar ul li{
         display: block;
         opacity: 0; /* makes them invisible until they slide in*/
-        /* margin-left: 18px; */
-        
     }
-    
     .navbar ul li a{
         display: inline-block;
         margin: 0;
         padding: 30px 0;
-        /* margin-top: 20px; */
         font-size: 20px;
         transition: 300ms;
-        /* border-radius: 12px; */
         width: 100%;
-        /* color: white; */
     }
     .navbar ul li a:hover,
     .navbar ul li a.active{
-        /* background: #fff;
-        color: black; */
-        /* background: #0a0727; */
-        
-        /* background: linear-gradient(45deg, #0a0727, #130d49); */
-        /* background: #1d1b30; */
         background: #1f1d36;
     }
     .navbar ul li a:hover:after,
     .navbar ul li a.active:after{ /*removes the underline on hover*/
         width: 100%;
     }
-
-    /* .max-width{
-        max-width: 800px;
-    } */
-    /* .about .about-content .column{
-        width: 50%;
-    }
-    .about .about-content .right{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-    }
-    .about .about-content .left{
-        flex: 100%;
-    } */
 
     /* ABOUT SECTION CONTENT */
     .about .about-content{
@@ -1054,7 +856,6 @@ section .title{
         margin-top: clamp(100px, 38vw, 140px);
         display: flex;
         justify-content: center;
-        /* margin: 0 auto 60px; */
     }
     .about .about-content .right img{
         height: clamp(100px, 38vw, 300px);
@@ -1069,17 +870,15 @@ section .title{
         width: clamp(100px, 38vw, 300px);
     }
 
-
+    /* EXP SECTION */
     .exp .exp-content .card{
         height: 300px;
     }
     .exp .exp-content .card .job-description{
-        /* width: 500px; */
-        /* height: 300px; */
         font-size: 12px;
     }
 
-
+    /* PROJECTS SECTION */
     .projects .item{
         flex-direction: column;
     }
@@ -1087,7 +886,6 @@ section .title{
         width: 100%;
     }
     .projects .item .project-image-wrapper .img img{
-        /* width: 500px; */
         height: 500px;
     }
     .projects .item .project-info-wrapper{
@@ -1106,10 +904,8 @@ section .title{
         margin-left: 0;
     }
 
-
-    
+    /* FOOTER SECTION */
     .footer .footer-content{
-        /* justify-content: center; */
         display: block;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
