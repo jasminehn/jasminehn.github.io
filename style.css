@@ -20,6 +20,7 @@
     --gradient-left: #2770fb;
     --gradient-right: #6b12d0;
     --gradient-tilt: 45deg;
+    --main-text: #fff;
 }
 
 .parallax-effect,
@@ -40,12 +41,16 @@
 body{
     min-height: 100vh;
     background: var(--main-bg);
+    color: var(--main-text);
 }
 
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+}
+a {
+    color: var(--main-text);
 }
 
 
@@ -98,7 +103,6 @@ body{
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: white;
     transition: 0.5s;
 }
 .navbar .logo:hover{
@@ -162,7 +166,6 @@ body{
 
 /*------------- MENU BTN STYLING -------------*/
 .menu-btn{
-    color: white;
     cursor: pointer;
     display: none;
 }
@@ -211,7 +214,6 @@ body{
 /*------------- BUTTON STYLING -------------*/
 .solid-btn{
     background: linear-gradient(var(--gradient-tilt), var(--gradient-left), var(--gradient-right));
-    color: white;
     font-size: 14px;
     /* font-size: clamp(3px, 2vw, 14px); */
     padding: 0.6em 1.6em;
@@ -220,7 +222,6 @@ body{
 .outline-btn{
     border: 2px solid transparent;
     position: relative;
-    color: white;
     font-size: 14px;
     padding: 0.6em 1.6em;
     border-radius: 50px;   
@@ -272,7 +273,6 @@ section .title{
     /*background: url('https://source.unsplash.com/user/365yehet/likes/1800x900') no-repeat center; /*the height of the background is 200px taller than default to accomadate for parallax "snapping" when you first scroll*/
     background: url('images/headers/header-section-image.jpg') no-repeat center; /*temp bc unsplash links are broken :(*/
     background-size: cover; /*this makes the background not get cut off!!! */
-    color: white;
     height: 100vh;
     min-height: 500px;
 }
@@ -292,7 +292,6 @@ section .title{
 /*------------- ABOUT SECTION CONTENT -------------*/
 .about{
     background: var(--main-bg);
-    color: whitesmoke;
 }
 .about .about-content{
     display: flex;
@@ -407,7 +406,6 @@ section .title{
     /* background: url('https://source.unsplash.com/collection/2710241/1600x1900') no-repeat center; */
     background: url('images/headers/exp-section-image.jpg') no-repeat center; /*temp bc unsplash links are broken :(*/
     background-size: cover; /*this makes the background not get cut off!!! */
-    color: whitesmoke;
 }
 .exp .exp-content{
     display: flex;
@@ -493,7 +491,6 @@ section .title{
 
 /*------------- PROJECTS SECTION STYLE -------------*/
 .projects{
-    color: whitesmoke;
     background: var(--main-bg);
 }
 .projects .item{
@@ -593,7 +590,6 @@ section .title{
     /* background: url('https://source.unsplash.com/collection/9049879/1800x900/') no-repeat center; */
     background: url('images/headers/contact-section-image.jpg') no-repeat center; /*temp bc unsplash links are broken :(*/
     background-size: cover; /*this makes the background not get cut off!!! */
-    color: whitesmoke;
 }
 .contact::after{
     content: "";
@@ -653,7 +649,7 @@ section .title{
     display: block;
     height: 100%;
     width: 100%;
-    color: whitesmoke;
+    color: var(--main-text);
     background-color: inherit;
     border: none;
     font-size: 17px;    
@@ -739,7 +735,6 @@ section .title{
 /*------------- FOTTER SECTION STYLE -------------*/
 .footer{
     background: black;
-    color: white;
     font-family: 'Montserrat', sans-serif;
 }
 .footer .footer-content{
@@ -785,10 +780,6 @@ section .title{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-.footer .social-links .social-link a{
-    color: white;    
-}
-
 
 
 
